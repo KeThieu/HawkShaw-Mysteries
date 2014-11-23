@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <head>
+        <title>"The Genius of the Crowd"</title>
+        <meta charset = "utf-8" />
+       
+        <div style="text-align: center;">
+        <canvas id = "canvas" width = "720" height = "480" style ="border:1px solid black" 
+        oncontextmenu="return false;" onselectstart = "return false;">
+        There is an error if you see this message
+        </canvas>
+        </div>
+    </head>
+    <body>
+    	<script src = "jquery-1.7.1.min.js"> </script>
+    	<script src = "TOC.js"> </script>
+    	<script src = "canvastext-0.4.1.mod.js"> </script>
+    	<script src = "vncanvas-0.4.js"> </script>
+    	
+    	
+    	<script>
+    	//Fills Canvas with the color BLACK
+    	/*
+        var temp = document.getElementById("canvas");
+        var ctx = temp.getContext('2d');
+        ctx.fillStyle = "#000000";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        */
+        
+        //This is required to load the game up at the start of it.
+        window.onload = function() {
+        	Stage.Init("canvas", 720, 480); //Send canvas information
+        	Stage.script.Init(title); //Starts at the first script, which is the title screen
+
+}
+        
+       </script>
+       </body>
+</html>
